@@ -1,0 +1,15 @@
+[submodule "modules/remote_state"]
+  path = modules/remote_state
+  url = https://github.com/turnbullpress/tf_remote_state
+[submodule "modules/vpc"]
+	path = modules/vpc
+	url = https://github.com/turnbullpress/tf_vpc
+[submodule "modules/consul"]
+	path = modules/consul
+	url = https://github.com/turnbullpress/tf_consul
+[submodule "modules/web"]
+	path = modules/web
+	url = https://github.com/turnbullpress/tf_web
+[submodule "modules/api"]
+	path = modules/api
+	url = https://github.com/turnbullpress/tf_api

@@ -1,0 +1,26 @@
+---
+driver:
+  name: terraform
+
+provisioner:
+  name: terraform
+  variable_files:
+    - terraform.tfvars
+
+platforms:
+  - name: ubuntu
+
+transport:
+  name: ssh
+  ssh_key: ~/.ssh/james_aws
+
+verifier:
+  name: terraform
+  format: doc
+  groups:
+  - name: bastion
+    hostnames: bastion_host_dns
+    username: ubuntu
+
+suites:
+  - name: default
