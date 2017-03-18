@@ -2,6 +2,14 @@ provider "aws" {
   region = "${var.region}"
 }
 
+terraform {
+  backend "s3" {
+    region = "us-east-1"
+    bucket = "examplecom-remote_state-development"
+    key    = "terraform.tfstate"
+  }
+}
+
 module "remote_state" {
   source      = "github.com/turnbullpublishing/tf_remote_state"
   prefix      = "${var.prefix}"
