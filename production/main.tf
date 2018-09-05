@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     region = "us-east-1"
-    bucket = "examplecom-remote_state-production"
+    bucket = "examplecom-remote-state-production"
     key    = "terraform.tfstate"
   }
 }
