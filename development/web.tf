@@ -1,21 +1,26 @@
 variable "cloudflare_email" {
+  type = string
   description = "The Cloudflare email of your account"
 }
 
 variable "cloudflare_token" {
+  type = string
   description = "The Cloudflare token"
 }
 
 variable "domain" {
+  type = string
   description = "The domain of our web service."
 }
 
 variable "web_instance_count" {
+  type = number
   default     = 2
   description = "The number of Web instances"
 }
 
 variable "app_instance_count" {
+  type = number
   default     = 2
   description = "The number of App instances"
 }

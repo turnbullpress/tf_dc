@@ -22,8 +22,8 @@ module "vpc" {
   region          = var.region
   key_name        = var.key_name
   vpc_cidr        = var.vpc_cidr
-  public_subnets  = [var.public_subnets]
-  private_subnets = [var.private_subnets]
+  public_subnets  = var.public_subnets
+  private_subnets = var.private_subnets
 }
 
 output "public_subnet_ids" {
