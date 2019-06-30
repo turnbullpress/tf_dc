@@ -10,12 +10,6 @@ terraform {
   }
 }
 
-module "remote_state" {
-  source      = "github.com/turnbullpublishing/tf_remote_state"
-  prefix      = var.prefix
-  environment = var.environment
-}
-
 module "vpc" {
   source          = "github.com/turnbullpublishing/tf_vpc.git?ref=v0.0.4"
   environment     = var.environment
