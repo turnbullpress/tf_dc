@@ -3,4 +3,6 @@ name: default
 title: 'Default suite of tests'
 summary: 'A collection of controls to test baseline host configuration'
 maintainer: 'James Turnbull'
+copyright: 'Turnbull Press'
+license: 'MIT'
 version: 1.0.0

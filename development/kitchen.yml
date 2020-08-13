@@ -10,17 +10,15 @@ provisioner:
 platforms:
   - name: ubuntu
 
-transport:
-  name: ssh
-  ssh_key: ~/.ssh/james_aws
-
 verifier:
   name: terraform
-  format: doc
-  groups:
+  systems:
   - name: bastion
-    hostnames: bastion_host_dns
-    username: ubuntu
+    backend: ssh
+    hosts_output: bastion_host_dns
+    user: ubuntu
+    key_files:
+     - ~/.ssh/james_aws
 
 suites:
   - name: default
