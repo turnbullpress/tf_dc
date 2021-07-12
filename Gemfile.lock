@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.6.0)
-      public_suffix (>= 2.0.2, < 4.0)
+    addressable (2.8.0)
+      public_suffix (>= 2.0.2, < 5.0)
     aws-eventstream (1.0.3)
     aws-partitions (1.180.0)
     aws-sdk-autoscaling (1.22.0)
@@ -180,6 +180,8 @@ GEM
       train-habitat (~> 0.1)
       tty-prompt (~> 0.17)
       tty-table (~> 0.10)
+    inspec-bin (4.6.4)
+      inspec (= 4.6.4)
     jmespath (1.4.0)
     json (2.2.0)
     json-schema (2.8.1)
@@ -242,7 +244,7 @@ GEM
     pry (0.12.2)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
-    public_suffix (3.1.1)
+    public_suffix (4.0.6)
     rbnacl (4.0.2)
       ffi
     representable (3.0.4)
@@ -391,6 +393,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  inspec-bin
   kitchen-terraform
   test-kitchen
 
