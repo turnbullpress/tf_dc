@@ -180,7 +180,9 @@ GEM
       train-habitat (~> 0.1)
       tty-prompt (~> 0.17)
       tty-table (~> 0.10)
-    jmespath (1.4.0)
+    inspec-bin (4.6.4)
+      inspec (= 4.6.4)
+    jmespath (1.6.1)
     json (2.2.0)
     json-schema (2.8.1)
       addressable (>= 2.4)
@@ -391,6 +393,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  inspec-bin
   kitchen-terraform
   test-kitchen
 
